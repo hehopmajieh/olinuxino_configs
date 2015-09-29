@@ -58,17 +58,19 @@ $ make -j4
   You can use files provided by pack.tgz in Android Directory, or manualy to change fex file "storage_type" parameter
 to 1 ex. 
 
-```sh
-storage_type = 1
-```
+    ```sh
+    storage_type = 1
+    ```
  storage_type: 0 = nand, 1 = SDCard, 2 = SPI-nor
 
+
+ Reference: http://linux-sunxi.org/Fex_Guide
 ### Linux:
 
 + Linux Configurations
 	Linux Configurations can be found in Linux directory
 
-Build Linux Kernel and Bootloader [linux-how-to]
+Build Linux Kernel and Bootloader:
 
-[linux-how-to]: <https://github.com/OLIMEX/OLINUXINO/tree/master/SOFTWARE/A20/A20-build>
+https://github.com/OLIMEX/OLINUXINO/tree/master/SOFTWARE/A20/A20-build
 
