@@ -1,5 +1,5 @@
- #OLinuXino Configs  
- =======================
+OLinuXino Configs  
+=======================
 
  Configurations are ordered by Board name :
  > For. ex :   
