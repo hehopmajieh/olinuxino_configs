@@ -1,5 +1,5 @@
-  # OLinuXino Configs
- =======================
+#OLinuXino Configs  
+=======================
 
  Configurations are ordered by Board name :
  > For. ex :   
@@ -8,8 +8,8 @@
  >  + Linux   - Linux Configs/Tutorials 
  >  + Tools   - Additional tools 
 
- # Requirements :
-  # Android:  
+## Requirements :
+### Android:  
 + Installing required packages /Ubuntu or Debian, tested on ubuntu 12.04/ :
   You can follow official google documentation : [Google Link]
   [Google Link]: <http://source.android.com/source/initializing.html> 
