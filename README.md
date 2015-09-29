@@ -8,7 +8,10 @@
  >  + Linux   - Linux Configs/Tutorials 
  >  + Tools   - Additional tools 
 
-## Requirements :
+
+##A20-OLinuXino-MICRO & A20-OLinuXIno-LIME2 & A20-OLinuXIno-LIME
+--------------------------------------------------  
+
 ### Android:  
 + Installing required packages /Ubuntu or Debian, tested on ubuntu 12.04/ :
   You can follow official google documentation : [Google Link]
