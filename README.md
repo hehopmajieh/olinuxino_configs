@@ -55,8 +55,13 @@ $ make -j4
     ```sh
     lichee/tools/pack/chips/sun7i/configs/android/
     ```
-  You can use files provided by pack.tgz in Android Directory
- 
+  You can use files provided by pack.tgz in Android Directory, or manualy to change fex file "storage_type" parameter
+to 1 ex. 
+
+```sh
+storage_type = 1
+```
+ storage_type: 0 = nand, 1 = SDCard, 2 = SPI-nor
 
 ### Linux:
 
