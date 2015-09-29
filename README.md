@@ -63,7 +63,7 @@ $ make -j4
 + Linux Configurations
 	Linux Configurations can be found in Linux directory
 
-+ Build Linux Kernel and Bootloader [linux-how-to]
+Build Linux Kernel and Bootloader [linux-how-to]
 
 [linux-how-to]: <https://github.com/OLIMEX/OLINUXINO/tree/master/SOFTWARE/A20/A20-build>
 
