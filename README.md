@@ -24,7 +24,7 @@
 
   [Android Link]: <https://www.olimex.com/wiki/images/f/fd/Android4.2-v3.0.torrent>    
   [Lichee Link]: <https://www.olimex.com/wiki/images/0/0c/Lichee-v3.0.torrent>
-  [BSP Link]: <https://www.olimex.com/wiki/images/0/0c/Lichee-v3.0.torrent>
+  [BSP Link]: <https://github.com/hehopmajieh/olinuxino_configs/raw/master/A20-OLinuXino-MICRO/Android/pack.tar.gz>
 
 + Extracting & Building
  ```bash
