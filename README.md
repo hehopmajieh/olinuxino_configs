@@ -56,4 +56,14 @@ $ make -j4
     lichee/tools/pack/chips/sun7i/configs/android/
     ```
   You can use files provided by pack.tgz in Android Directory
-  
+ 
+
+### Linux:
+
++ Linux Configurations
+	Linux Configurations can be found in Linux directory
+
++ Build Linux Kernel and Bootloader [linux-how-to]
+
+[linux-how-to]: <https://github.com/OLIMEX/OLINUXINO/tree/master/SOFTWARE/A20/A20-build>
+
