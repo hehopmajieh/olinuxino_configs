@@ -52,5 +52,5 @@ $ make -j4
     ```sh
     lichee/tools/pack/chips/sun7i/configs/android/
     ```
-  You can use files provided in Android subdirectory 
+  You can use files provided by pack.tgz in Android Directory
   
