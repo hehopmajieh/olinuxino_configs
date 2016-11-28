@@ -4,7 +4,7 @@
 
  * Installing required packages /Ubuntu or Debian, tested on ubuntu 12.04/ : You can follow official google documentation : [Google Link](http://source.android.com/source/initializing.html)
  * Getting Sources Sources are available by BitTorrent. Links to Source Archives :
- 	[Android Source]() and [Lichee Source]()
+ 	[Android Source](https://www.olimex.com/wiki/images/9/9b/Android4.4_a33.torrent) and [Lichee Source](https://www.olimex.com/wiki/images/5/5a/Lichee-a33.torrent)
  * Extracting Sources and Building Android
  	
 ```bash
