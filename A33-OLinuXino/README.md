@@ -2,7 +2,7 @@
 
 ## Android:
 
- * Installing required packages /Ubuntu or Debian, tested on ubuntu 12.04/ : You can follow official google documentation : Google Link
+ * Installing required packages /Ubuntu or Debian, tested on ubuntu 12.04/ : You can follow official google documentation : [Google Link](http://source.android.com/source/initializing.html)
  * Getting Sources Sources are available by BitTorrent. Links to Source Archives :
  	[Android Source]() and [Lichee Source]()
  * Extracting Sources and Building Android
