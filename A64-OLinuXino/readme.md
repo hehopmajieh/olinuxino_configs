@@ -11,6 +11,7 @@ git clone https://github.com/hehopmajieh/linux-a64
 git clone https://github.com/hehopmajieh/u-boot-a64
 git clone https://github.com/hehopmajieh/arm-trusted-firmware-a64
 git clone https://github.com/hehopmajieh/a64_blobs
+git clone https://github.com/longsleep/sunxi-pack-tools.git sunxi-pack-tools
 ```
 ### 2. Setup toolchain
 ```bash
@@ -22,11 +23,12 @@ git clone https://github.com/hehopmajieh/a64_blobs
 
 #### Linux
 ```bash
-	cd linux-a64
-    make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- sun50iw1p1smp_linux_defconfig
-    make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- LOCALVERSION= clean
-	make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j4 LOCALVERSION= Image
-	 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j4 LOCALVERSION= modules_install  INSTALL_MOD_PATH=out INSTALL_MOD_STRIP=1
+cd linux-a64
+make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- sun50iw1p1smp_linux_defconfig
+make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- LOCALVERSION= clean
+make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j4 LOCALVERSION= Image
+make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j4 LOCALVERSION= modules
+make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j4 LOCALVERSION= modules_install  INSTALL_MOD_PATH=out INSTALL_MOD_STRIP=1
 ```
 #### U-Boot
 ```bash
@@ -40,4 +42,12 @@ cd ../arm-trusted-firmware-a64/
 make clean
 make ARCH=arm CROSS_COMPILE=aarch64-linux-gnu- PLAT=sun50iw1p1 bl31
 ```
+#### Allwinner Pack Tools 
+```bash
+cd ../
+make -C sunxi-pack-tools
+```
+### 4. Helper Scripts
+Scripts are located under Tools directory in this repo. 
+They must be copied in a64-olinuxino directory.
 
