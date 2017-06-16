@@ -7,16 +7,17 @@
 ```bash
 mkdir a64-olinuxino
 cd a64-olinuxino
-git clone https://github.com/hehopmajieh/linux-a64
-git clone https://github.com/hehopmajieh/u-boot-a64
+git clone https://github.com/A64-TERES/linux-a64
+git clone https://github.com/A64-TERES/u-boot_new
 git clone https://github.com/hehopmajieh/arm-trusted-firmware-a64
-git clone https://github.com/hehopmajieh/a64_blobs
-git clone https://github.com/longsleep/sunxi-pack-tools.git sunxi-pack-tools
+git clone https://github.com/A64-TERES/blobs
+git clone https://github.com/A64-TERES/sunxi-pack-tools sunxi-pack-tools -b pinebook
+git clone https://github.com/A64-TERES/scripts
 ```
 ### 2. Setup toolchain
 ```bash
 	sudo apt install gcc-aarch64-linux-gnu
-    sudo apt install gcc-4.7-arm-linux-gnueabihf
+        sudo apt install gcc-4.7-arm-linux-gnueabihf
 ```
 
 ### 3. Cross-compile sources
@@ -24,7 +25,7 @@ git clone https://github.com/longsleep/sunxi-pack-tools.git sunxi-pack-tools
 #### Linux
 ```bash
 cd linux-a64
-make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- sun50iw1p1smp_linux_defconfig
+make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- olimex_teres1_defconfig
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- LOCALVERSION= clean
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j4 LOCALVERSION= Image
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j4 LOCALVERSION= modules
@@ -32,9 +33,12 @@ make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j4 LOCALVERSION= modules_insta
 ```
 #### U-Boot
 ```bash
-cd ../u-boot-a64/
-make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- sun50iw1p1_config
-make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
+cd ../scripts/
+./build_uboot.sh #A64-Teres
+```
+or 
+```bash
+./build_uboot_a64.sh #A64-OLinuXino
 ```
 #### ATF
 ```bash
@@ -48,6 +52,4 @@ cd ../
 make -C sunxi-pack-tools
 ```
 ### 4. Helper Scripts
-Scripts are located under Tools directory in this repo. 
-They must be copied in a64-olinuxino directory.
 
